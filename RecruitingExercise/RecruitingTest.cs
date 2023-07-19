@@ -15,7 +15,7 @@ namespace RecruitingExercise
 
             var user = new User(subscriptions, "Mike Mora", PaymentType.AmericanExpress);
 
-            Assert.IsTrue(user.ExpiredSubscriptions == 2, "Expected expired subscriptions: 2 - Your code returns: {0}", user.ExpiredSubscriptions);
+            Assert.That(user.ExpiredSubscriptions, Is.EqualTo(2), "Expected expired subscriptions: 2 - Your code returns: {0}", user.ExpiredSubscriptions);
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace RecruitingExercise
 
             var user = new User(subscriptions, "Mike Mora", PaymentType.AmericanExpress);
 
-            Assert.IsTrue(user.ExpiredSubscriptions == 0, "Expected expired subscriptions: 0 - Your code returns: {0}", user.ExpiredSubscriptions);
+            Assert.That(user.ExpiredSubscriptions, Is.EqualTo(0), "Expected expired subscriptions: 0 - Your code returns: {0}", user.ExpiredSubscriptions);
         }
 
 
@@ -48,7 +48,7 @@ namespace RecruitingExercise
 
             var user = new User(subscriptions, "Mike Mora", PaymentType.AmericanExpress);
 
-            Assert.IsTrue(user.ExpiredSubscriptions == 2, "Expected expired subscriptions: 2 - Your code returns: {0}", user.ExpiredSubscriptions);
+            Assert.That(user.ExpiredSubscriptions, Is.EqualTo(2), "Expected expired subscriptions: 2 - Your code returns: {0}", user.ExpiredSubscriptions);
         }
 
 
